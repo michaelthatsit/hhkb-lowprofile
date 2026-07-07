@@ -5,7 +5,7 @@ hand-wired to a SuperMini nRF52840 (nice!nano V2 compatible).
 
 ## Pin Mapping
 
-### Rows (active-low, pull-up)
+### Rows (active-high, output)
 
 | Row | GPIO     | Board Label |
 |-----|----------|-------------|
@@ -15,7 +15,7 @@ hand-wired to a SuperMini nRF52840 (nice!nano V2 compatible).
 | R3  | &gpio0 20| 020         |
 | R4  | &gpio0 22| 022         |
 
-### Columns (active-low, pull-up)
+### Columns (active-high, pull-down)
 
 | Col | GPIO      | Board Label | Note    |
 |-----|-----------|-------------|---------|
@@ -32,7 +32,7 @@ hand-wired to a SuperMini nRF52840 (nice!nano V2 compatible).
 | C10 | &gpio1 11 | 111         |         |
 | C11 | &gpio0 10 | 010         | NFC pin |
 | C12 | &gpio0 9  | 009         | NFC pin |
-| C13 | &gpio1 1  | 101         |         |
+| C13 | &gpio1 7  | 107         |         |
 | C14 | &gpio1 2  | 102         |         |
 
 C11 and C12 require `CONFIG_NFCT_PINS_AS_GPIOS=y` (set in `hhkb.conf`).
