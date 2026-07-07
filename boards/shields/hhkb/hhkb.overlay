@@ -64,7 +64,7 @@
             , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C10 */
             , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C11 – NFC pin */
             , <&gpio0  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C12 – NFC pin */
-            , <&gpio1  1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C13 */
+            , <&gpio1  7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C13 */
             , <&gpio1  2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C14 */
             ;
     };
