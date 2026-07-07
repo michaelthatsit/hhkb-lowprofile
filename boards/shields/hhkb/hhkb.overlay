@@ -43,29 +43,29 @@
         diode-direction = "row2col";
 
         row-gpios
-            = <&gpio0  6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* R0 */
-            , <&gpio0  8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* R1 */
-            , <&gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* R2 */
-            , <&gpio0 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* R3 */
-            , <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* R4 */
+            = <&gpio0  6 GPIO_ACTIVE_HIGH>   /* R0 */
+            , <&gpio0  8 GPIO_ACTIVE_HIGH>   /* R1 */
+            , <&gpio0 17 GPIO_ACTIVE_HIGH>   /* R2 */
+            , <&gpio0 20 GPIO_ACTIVE_HIGH>   /* R3 */
+            , <&gpio0 22 GPIO_ACTIVE_HIGH>   /* R4 */
             ;
 
         col-gpios
-            = <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C00 */
-            , <&gpio1  0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C01 */
-            , <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C02 */
-            , <&gpio1  4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C03 */
-            , <&gpio1  6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C04 */
-            , <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C05 */
-            , <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C06 */
-            , <&gpio0  2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C07 */
-            , <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C08 */
-            , <&gpio1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C09 */
-            , <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C10 */
-            , <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C11 – NFC pin */
-            , <&gpio0  9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C12 – NFC pin */
-            , <&gpio1  1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C13 */
-            , <&gpio1  2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   /* C14 */
+            = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C00 */
+            , <&gpio1  0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C01 */
+            , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C02 */
+            , <&gpio1  4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C03 */
+            , <&gpio1  6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C04 */
+            , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C05 */
+            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C06 */
+            , <&gpio0  2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C07 */
+            , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C08 */
+            , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C09 */
+            , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C10 */
+            , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C11 – NFC pin */
+            , <&gpio0  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C12 – NFC pin */
+            , <&gpio1  1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C13 */
+            , <&gpio1  2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* C14 */
             ;
     };
 };
