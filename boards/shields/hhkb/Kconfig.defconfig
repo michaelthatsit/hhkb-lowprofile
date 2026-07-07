@@ -1,6 +1,6 @@
 if SHIELD_HHKB
 
 config ZMK_KEYBOARD_NAME
-	default "HHKB"
+	default "keyboard, that's it."
 
 endif
