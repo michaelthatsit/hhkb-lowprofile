@@ -1,0 +1,9 @@
+file_format: "1"
+id: hhkb
+name: HHKB Low-Profile
+type: shield
+url: https://github.com/michael/hhkb-lowprofile
+requires:
+  - nice_nano_v2
+features:
+  - keys

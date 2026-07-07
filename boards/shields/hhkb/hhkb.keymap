@@ -1,0 +1,38 @@
+/*
+ * HHKB Low-Profile – ZMK Keymap
+ *
+ * Layer 0: Default HHKB layout
+ * Layer 1: Fn layer (F-keys, arrows, media, BLE, bootloader)
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            display-name = "Base";
+            bindings = <
+/*  Row 0 */ &kp ESC   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS &kp EQUAL &kp BSLH  &kp GRAVE
+/*  Row 1 */ &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT            &kp BSPC
+/*  Row 2 */ &kp LCTRL           &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT   &kp RET
+/*  Row 3 */           &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH            &kp RSHFT &mo 1
+/*  Row 4 */                     &kp LALT  &kp LGUI                      &kp SPACE                     &kp RGUI            &kp RALT
+            >;
+        };
+
+        fn_layer {
+            display-name = "Fn";
+            bindings = <
+/*  Row 0 */ &trans    &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12   &kp INS   &kp DEL
+/*  Row 1 */ &trans    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR &trans &kp PG_UP &trans &kp PG_DN &trans &trans     &bootloader
+/*  Row 2 */ &trans              &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &trans &trans &kp LEFT &kp DOWN &kp UP  &kp RIGHT &kp HOME  &kp END   &trans
+/*  Row 3 */           &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp C_PP  &kp C_PREV &kp C_NEXT &trans           &trans    &trans
+/*  Row 4 */                     &trans    &trans                        &trans                        &trans              &trans
+            >;
+        };
+    };
+};
